@@ -100,8 +100,8 @@ function hero(user) {
       <div class="relative mx-auto grid max-w-6xl items-center gap-12 px-5 md:px-8 lg:grid-cols-2">
         <div class="reveal">
           <span class="inline-flex items-center gap-2 rounded-full border border-accent-300/60 bg-accent-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-accent-700">${icon('sparkle', 'h-3.5 w-3.5')} Nền tảng học Toán cho học sinh Việt</span>
-          <h1 class="mt-6 font-display text-5xl font-bold leading-[1.05] text-ink md:text-6xl">
-            Học Toán <span class="relative whitespace-nowrap text-brand-800">rõ ràng<svg class="absolute -bottom-2 left-0 w-full" height="10" viewBox="0 0 200 10" preserveAspectRatio="none"><path d="M2 7C60 2 140 2 198 6" stroke="#bd8526" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg></span>.<br/>Tiến bộ <span class="italic text-accent-600">mỗi ngày</span>.
+          <h1 class="mt-6 font-display text-[2.1rem] font-bold leading-[1.2] text-ink sm:text-5xl sm:leading-[1.12] md:text-6xl">
+            Học Toán <span class="relative whitespace-nowrap text-brand-800">rõ ràng<svg class="absolute -bottom-1.5 left-0 w-full" height="10" viewBox="0 0 200 10" preserveAspectRatio="none"><path d="M2 7C60 2 140 2 198 6" stroke="#bd8526" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg></span>.<br/>Tiến bộ <span class="italic text-accent-600">mỗi ngày</span>.
           </h1>
           <p class="mt-6 max-w-xl text-lg leading-relaxed text-ink/70">
             Vào lớp bằng mã, học bài giảng theo tiến độ của riêng bạn, làm trắc nghiệm và biết điểm ngay lập tức. Mọi thứ bạn cần để giỏi Toán, gọn trong một nơi.
