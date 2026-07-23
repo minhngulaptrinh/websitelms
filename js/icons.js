@@ -1,0 +1,40 @@
+const ICONS = {
+  grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+  board: '<rect x="3" y="4" width="18" height="12" rx="1.6"/><path d="M12 16v4"/><path d="M8 20h8"/><path d="M7.5 11l2.5-2.5L12.5 11l4-4.5"/>',
+  graduation: '<path d="M3 9l9-4 9 4-9 4-9-4z"/><path d="M7 11.4V15c0 1.2 2.2 2.2 5 2.2s5-1 5-2.2v-3.6"/><path d="M21 9.2v4.3"/>',
+  school: '<path d="M4 21V10l8-5 8 5v11"/><path d="M3 21h18"/><rect x="10" y="14" width="4" height="7"/><path d="M9.5 10h5"/>',
+  book: '<path d="M12 6.6C10.3 5.6 7.6 5.3 5 6.1v12c2.6-.8 5.3-.5 7 .5 1.7-1 4.4-1.3 7-.5v-12c-2.6-.8-5.3-.5-7 .5z"/><path d="M12 6.6V18.6"/>',
+  doc: '<path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4.5A1 1 0 0 1 7 3.5z"/><path d="M14 3.5V8h4"/><path d="M9 12.5h6M9 16h4"/>',
+  chart: '<path d="M4 4v16h16"/><rect x="7" y="12" width="2.6" height="5" rx="0.6"/><rect x="12" y="8.5" width="2.6" height="8.5" rx="0.6"/><rect x="17" y="6" width="2.6" height="11" rx="0.6"/>',
+  users: '<circle cx="9" cy="8" r="3.2"/><path d="M3.6 20c.5-3.2 2.9-5 5.4-5s4.9 1.8 5.4 5"/><path d="M16 5.3a3.2 3.2 0 0 1 0 5.9"/><path d="M18 15.2c1.7.6 3 2.2 3.4 4.8"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>',
+  logout: '<path d="M9 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/>',
+  menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+  check: '<path d="M4 12.5l5 5L20 6.5"/>',
+  checkCircle: '<circle cx="12" cy="12" r="9"/><path d="M8 12.2l2.6 2.6L16 9.5"/>',
+  arrowRight: '<path d="M4 12h15"/><path d="M13 6l6 6-6 6"/>',
+  sparkle: '<path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6z"/>',
+  shield: '<path d="M12 3l7 3v5c0 4.4-3 7.7-7 9-4-1.3-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/>',
+  clock: '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+  play: '<path d="M8 5.5v13l11-6.5z"/>',
+  video: '<rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/>',
+  link: '<path d="M14 4h6v6"/><path d="M20 4l-8.5 8.5"/><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/>',
+  upload: '<path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/><path d="M12 15.5V4"/><path d="M7.5 8.5L12 4l4.5 4.5"/>',
+  star: '<path d="M12 3.5l2.6 5.6 6 .7-4.5 4.1 1.2 6-5.3-3-5.3 3 1.2-6L3.4 9.8l6-.7z"/>',
+  quote: '<path d="M9.5 7c-2.6 1-4.2 3.3-4.2 6.2V17h5v-5H6.6C6.8 9.7 7.8 8.4 9.9 7.7z"/><path d="M19 7c-2.6 1-4.2 3.3-4.2 6.2V17h5v-5h-3.7c.2-2.3 1.2-3.6 3.3-4.3z"/>',
+  calculator: '<rect x="5" y="3" width="14" height="18" rx="2"/><rect x="8" y="6" width="8" height="3" rx="0.6"/><path d="M8.5 13h0M12 13h0M15.5 13h0M8.5 16.5h0M12 16.5h0M15.5 16.5h0"/>',
+  lightbulb: '<path d="M9.5 18h5"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/>',
+  award: '<circle cx="12" cy="9" r="5"/><path d="M9 13.4L8 21l4-2 4 2-1-7.6"/>',
+  target: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.4"/><path d="M12 11.9h0"/>',
+  clipboard: '<rect x="5" y="4" width="14" height="17" rx="2"/><rect x="9" y="2.6" width="6" height="3.2" rx="1"/><path d="M9 12.5l2 2 4-4"/>',
+  mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7.5l8 5.5 8-5.5"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 3.8 5.7 3.8 9S14.5 18.5 12 21C9.5 18.5 8.2 15.3 8.2 12S9.5 5.5 12 3z"/>',
+  compass: '<circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>',
+  alert: '<path d="M12 3.6l9.4 16.3a1 1 0 0 1-.9 1.5H3.5a1 1 0 0 1-.9-1.5z"/><path d="M12 9.5v4.5"/><path d="M12 17.6h0"/>',
+  dot: '<circle cx="12" cy="12" r="2.2"/>',
+};
+
+export function icon(name, cls = 'h-6 w-6', strokeWidth = 1.7) {
+  const inner = ICONS[name] || ICONS.dot;
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round" class="${cls}" aria-hidden="true">${inner}</svg>`;
+}
